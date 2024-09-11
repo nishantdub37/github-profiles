@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2a2a72;
+    --secondary-color: #4c2885;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-info{
+    width: 45rem;
+    height: 18rem;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    display: none;
+    gap: 30px;
+    align-items: center;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.user-info.active{
+    display: flex;
+}
+
+.empty{
+    width: 50%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    display: none;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.empty.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.user-details{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.follow-info{
+    display: flex;
+    gap: 30px;
+}
+
+.user-desc{
+    font-size: 0.9rem;
+}
+
+.repos{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.repos div{
+    background-color: var(--primary-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    height: 100%;
+    width: 100%;
+}
+
+.user-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.search{
+    width: 28rem;
+    height: 2.8rem;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    padding: 0 1rem;
+    color: #fff;
+    border: 2px solid var(--secondary-color)
+}
+
+.search::placeholder{
+    color: rgba(159, 159, 159, 0.902);
+}
+
+.search:focus{
+    background-color: var(--secondary-color);
+}
+
